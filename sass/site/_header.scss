@@ -1,3 +1,122 @@
 .site-header {
 	margin-bottom: 3em;
 }
+
+.slide-menu {
+  position: fixed;
+  width: 320px;
+  max-width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #ccc;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  will-change: transform;
+  z-index: -1;
+}
+
+.slide-menu .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  will-change: transform;
+}
+
+.slide-menu ul {
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.slide-menu ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+.slide-menu ul a {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.slide-menu.no-transition, .slide-menu.no-transition * {
+  transition: none !important;
+}
+
+
+.slide-menu {
+  background: #ccc;
+  opacity: 1;
+  color: #999;
+}
+
+.slide-menu .slider {
+  top: 130px;
+}
+
+.slide-menu .controls {
+  overflow: hidden;
+}
+
+.slide-menu a {
+  color: #999;
+}
+
+.slide-menu a:hover {
+  background: #ccc;
+  color: #999;
+}
+
+.slide-menu .btn {
+  float: right;
+  color: #999;
+  background: #ccc;
+  padding: 8px;
+}
+
+.slide-menu .btn:hover {
+  background: #ccc;
+}
+
+.slide-menu .btn + .btn {
+  margin-right: 1px;
+}
+
+#test-menu-left {
+  padding: 16px;
+}
+
+.controls {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+ 	z-index: 100;
+// 	background-color: #ccc;
+}
+
+.admin-bar .controls {
+	top: 32px;
+}
+.site-logo{
+	width: 10rem;
+	margin: 2rem auto;
+}

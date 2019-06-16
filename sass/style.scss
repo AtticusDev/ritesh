@@ -39,3 +39,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Theme Hamburger buttons
+--------------------------------------------------------------*/
+$hamburger-layer-width                     : 30px !default;
+@import "hamburgers/hamburgers";

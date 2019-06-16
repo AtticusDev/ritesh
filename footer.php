@@ -15,11 +15,23 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
-			<div class="site-info">
-				&copy; <?php bloginfo( 'name' );
-						echo ' - ';
-						echo date("Y"); ?>
-			</div><!-- .site-info -->
+			<div class="row justify-content-center">
+				<div class="footer-contact-details">
+					<div class="site-logo-footer">
+						<a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/shc_logo.svg" alt="Surrey Hand Clinic logo"></a>
+					</div>
+
+
+					<div class="site-info">
+						<p>0208 409 1750</p>
+						<p>enquiries@surreyhandclinic.com</p>
+
+						&copy; <?php bloginfo( 'name' );
+								echo ' - ';
+								echo date("Y"); ?>
+					</div><!-- .site-info -->
+				</div>
+			</div>
 		</div><!--  .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
