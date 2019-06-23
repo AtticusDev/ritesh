@@ -13,7 +13,9 @@
 	<div class="container-fluid grey-panel">
 		<div class="row">
 			<div class="container">
+
 				<div class="row">
+
 					<div class="col-md-6">
 						<div class="home-img">
 							<img src="<?php the_field('top_left_image'); ?>">
@@ -22,6 +24,7 @@
 							<img src="<?php the_field('bottom_left_image'); ?>">
 						</div>
 					</div>
+
 					<div class="col-md-6">
 						<div class="home-img-tr">
 							<img src="<?php the_field('top_right_image'); ?>">
@@ -32,10 +35,12 @@
 							<a href="/about-ritesh/" class="btn readmoreBtn">Read more</a>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container" id="serviceWrapper">
@@ -97,8 +102,8 @@
 		</div>
 		<div class="row">
 
-				<?php if( have_rows('location_panels') ): 
-					 while( have_rows('location_panels') ): the_row(); 
+				<?php if( have_rows('location_panels', 'option') ): 
+					 while( have_rows('location_panels', 'option') ): the_row(); 
 					// vars
 					$title = get_sub_field('title');
 					$address = get_sub_field('address');
@@ -107,17 +112,19 @@
 
 				?>
 
-				<div class="col-md-3 text-center">
-					<h3><?php echo $title ?></h3>
-					<?php echo $address ?>
-					<a href="<?php echo $link ?>" class="btn googleBtn">View in Google</a>
+				<div class="col-md-3 text-center d-flex flex-column location-block">
+					<div>
+						<h3><?php echo $title ?></h3>
+						<?php echo $address ?>
+					</div>
+					<div class="mt-auto">
+						<a href="<?php echo $link ?>" class="btn googleBtn" target="_blank">View in Google</a>
+					</div>
 				</div>
 				<?php endwhile;
 				endif; ?>
 		</div>
 	</div>
-
-
 
 
 </article><!-- #post-## -->

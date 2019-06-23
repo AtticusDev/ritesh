@@ -24,7 +24,7 @@
 
 					<div class="site-info">
 						<p>0208 409 1750</p>
-						<p>enquiries@surreyhandclinic.com</p>
+						<p><a href="mailto:enquiries@surreyhandclinic.com" target="_blank">enquiries@surreyhandclinic.com</a></p>
 
 						&copy; <?php bloginfo( 'name' );
 								echo ' - ';

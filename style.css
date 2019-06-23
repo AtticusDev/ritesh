@@ -7578,9 +7578,9 @@ a.text-dark:hover, a.text-dark:focus {
       max-width: 100%; } }
   @media (min-width: 768px) {
     .content-area {
-      -ms-flex: 0 0 66.66666667%;
-          flex: 0 0 66.66666667%;
-      max-width: 66.66666667%; } }
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+      max-width: 100%; } }
 
 .widget-area {
   position: relative;
@@ -7701,6 +7701,13 @@ h1, h2 {
   letter-spacing: 0.25rem;
   margin: 1rem 0 1.5rem 0; }
 
+h3 {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0 1.5rem 0; }
+
 .overline::before {
   content: '';
   display: block;
@@ -7725,7 +7732,8 @@ h1, h2 {
 
 .grey-panel {
   background-color: #f8f9fa;
-  padding: 2rem 0; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .home-img, .home-img-tr {
   padding-bottom: 2rem; }
@@ -7817,6 +7825,9 @@ h1, h2 {
 .location-icon {
   width: 3rem; }
 
+.location-block {
+  height: 16rem; }
+
 .googleBtn {
   white-space: normal;
   padding: 0.5rem 1rem;
@@ -7829,11 +7840,50 @@ h1, h2 {
   font-weight: 700;
   font-size: 0.8rem;
   margin-top: 2rem;
-  z-index: 200; }
+  z-index: 200;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+
+.googleBtn:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  background-image: url(images/location-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center center;
+  opacity: 1;
+  top: 0px;
+  right: 0rem;
+  transition: 0.3s; }
 
 .googleBtn:hover {
-  background-color: #dbdcdd;
   color: #000000; }
+
+.googleBtn:hover:after {
+  opacity: 1;
+  background-color: #999999; }
+
+.condition-panel-block a {
+  color: #000; }
+
+.condition-panel-block a:hover {
+  text-decoration: none; }
+
+.condition-wrapper {
+  padding: 1px; }
+
+.condition-box {
+  height: 8rem;
+  padding: 1rem; }
+
+.condition-title {
+  width: 100%;
+  text-align: center; }
 
 @media (max-width: 768px) {
   .home-img-bl, .home-img-tr {
