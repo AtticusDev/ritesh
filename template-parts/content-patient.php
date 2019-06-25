@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in treatment.php
+ * Template part for displaying page content in patient.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,27 +14,21 @@
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
+						<div class="about-img">
+							<img src="<?php the_post_thumbnail_url(); ?>">
+						</div>
+					</div>
+					<div class="col-md-6">
 						<div class="about-content">
 							<h1 class="overline"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
-						</div>
-					</div>
-					<div class="col-md-8">
-						<div class="about-img">
-							<img src="<?php the_post_thumbnail_url(); ?>">
-							<a href="/appointment/" class="btn readmoreBtn">Book an appointment</a>
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
 </article><!-- #post-## -->
 
 
