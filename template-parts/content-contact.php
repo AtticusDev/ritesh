@@ -22,8 +22,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid grey-panel">
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">

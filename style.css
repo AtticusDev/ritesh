@@ -7688,6 +7688,10 @@ a.text-dark:hover, a.text-dark:focus {
       flex: 0 0 100%;
   max-width: 100%; }
 
+button:focus {
+  outline-color: transparent;
+  outline-style: none; }
+
 body {
   font-family: 'Cabin', sans-serif;
   color: #666666;
@@ -7886,11 +7890,47 @@ h3 {
   text-align: center; }
 
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
-  border: 1px solid black; }
+  border: 0px solid black; }
+
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border: 0px solid black; }
+
+body .gform_wrapper .gform_footer input[type=submit] {
+  padding: 1rem 4rem;
+  background-color: #fbb03b;
+  border: none;
+  color: #fff;
+  margin: 0 auto; }
+
+div.gform_footer.top_label {
+  text-align: center;
+  font-size: 0.8rem; }
 
 @media (max-width: 768px) {
   .home-img-bl, .home-img-tr {
-    display: none; } }
+    display: none; }
+  #serviceWrapper {
+    padding: 1rem;
+    overflow: hidden; }
+  .serviceBlock {
+    height: 250px;
+    margin-top: 0.5rem; }
+  .location-block {
+    height: auto;
+    margin-top: 1rem; }
+  .googleBtn {
+    width: 80%;
+    margin-top: 0rem; }
+  .about-img {
+    display: none; }
+  .condition-box {
+    height: 4rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto; }
+  body .gform_wrapper {
+    width: 90%;
+    margin: 0 auto; } }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -8144,7 +8184,7 @@ img {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 30px;
     height: 2px;
-    background-color: #ccc;
+    background-color: #000;
     border-radius: 2px;
     position: absolute;
     transition-property: transform;
