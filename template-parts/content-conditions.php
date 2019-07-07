@@ -32,8 +32,9 @@
 					<?php
 					$args = array(
 					 'post_type' => 'treatment',
-					 'meta_key' => 'order_number',
-					 'orderby' => 'meta_value_num',
+					 'posts_per_page' => '-1',
+//					 'meta_key' => 'order_number',
+//					 'orderby' => 'meta_value_num',
 					 'order' => 'ASC' 
 					);
 					$loop = new WP_Query( $args );
@@ -42,13 +43,13 @@
 
 						<div class="col-sm-12 col-md-3 condition-wrapper">
 							<a href="<?php the_permalink(); ?>">
-								<div class="d-flex align-items-center condition-box" style="background-color: #<?php the_field('colour'); ?> ">
+								<div class="d-flex align-items-center condition-box <?php the_field('colour'); ?>">
 									<div class="condition-title"><?php the_title(); ?></div>
 								</div>
 							</a>
 						</div>
 
-				<?php
+					<?php
 					endwhile;
 
 					wp_reset_query();

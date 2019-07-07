@@ -10,7 +10,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container-fluid grey-panel">
+	<div class="container-fluid grey-panel mb-5">
 		<div class="row">
 			<div class="container">
 				<div class="row">

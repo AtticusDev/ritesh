@@ -14,13 +14,13 @@
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
-						<div class="about-content">
+					<div class="col-md-6">
+						<div class="treatment-content">
 							<h1 class="overline"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-6">
 						<div class="about-img">
 							<img src="<?php the_post_thumbnail_url(); ?>">
 							<a href="/appointment/" class="btn readmoreBtn">Book an appointment</a>

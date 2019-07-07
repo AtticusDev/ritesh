@@ -101,6 +101,7 @@ h1, h2 {
 
 h3 {
   font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #000000;
   font-weight: 600;
   letter-spacing: 0.2rem;
@@ -139,13 +140,16 @@ h3 {
 .home-img, .home-img-tr {
   padding-bottom: 2rem;
 }
+.home-img-tr{
+  margin-top:1.5rem;
+}
 .home-img-bl {
   padding-bottom: 2rem;
   width: 80%;
   float: right;
 }
 .home-intro {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .home-intro a {
 //  cursor: pointer;
@@ -168,7 +172,13 @@ h3 {
   color: #000000; 
 }
 
+.about-content {
+  padding: 2rem 1rem 1rem 1rem;
+}
 
+.treatment-content {
+  padding-right: 4rem;
+}
 .pink {
   background-color: $pink;
 }
@@ -296,6 +306,13 @@ h3 {
 .condition-box {
   height:8rem;
   padding:1rem;
+  opacity: 1;
+  border: 1px solid #fff;
+  transition: 0.3s; 
+}
+.condition-box:hover{
+  opacity: 1;
+  border: 4px solid #fff;
 }
 .condition-title {
   width: 100%;
@@ -317,6 +334,15 @@ body .gform_wrapper .gform_footer input[type=submit] {
   color: $white;
   margin: 0 auto;
 }
+
+body .gform_wrapper li.hidden_label input {
+  margin-top:0px;
+}
+
+body .gform_wrapper .gform_body .gform_fields .gfield{
+  margin-top:0px;
+}
+
 div.gform_footer.top_label {
  text-align: center;
  font-size: 0.8rem;
