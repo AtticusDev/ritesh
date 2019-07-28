@@ -17,6 +17,7 @@
 					<div class="col-md-12">
 						<div class="about-content text-center">
 							<h1 class="overline-center"><?php the_title(); ?></h1>
+							<p><a href="#locations" class="btn readmoreBtn">Click here for for hospital booking numbers</a></p>
 						</div>
 					</div>
 				</div>
@@ -25,14 +26,21 @@
 		<div class="row">
 			<div class="container">
 				<div class="row justify-content-md-center">
-									<?php
-					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
-				?>
-
+					<div class="col-sm-12 col-md-6">
+						<?php
+						echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
+						?>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="about-img">
+							<img src="<?php the_post_thumbnail_url(); ?>">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<a id="locations"></a>
 
 			<?php
 			get_template_part( 'template-parts/locations' );

@@ -13,6 +13,26 @@
 
 	</div><!-- #content -->
 
+	<div class="container-fluid desktopCTA" style="background-color: rgba(0,0,0,0.8);">
+		<div class="row">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-4 mt-2">
+						<h3 style="color: #fff; text-align: right;">Request an appointment</h3>
+					</div>
+					<div class="col-md-8">
+						<div class="CTAform">
+						<?php
+							echo do_shortcode('[gravityform id=3 name=CTA form title=false description=false]');
+						?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row justify-content-center">

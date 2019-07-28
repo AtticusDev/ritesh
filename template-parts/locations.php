@@ -3,7 +3,7 @@
 			<div class="text-center">
 			<p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/location-icon.svg" class="location-icon"></p>
 
-				<h2 class="overline-center">Practice Locations</h2>
+				<h2 class="overline-center mb-5">Practice Locations</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -11,6 +11,7 @@
 				<?php if( have_rows('location_panels', 'option') ): 
 					 while( have_rows('location_panels', 'option') ): the_row(); 
 					// vars
+					$logo = get_sub_field('logo');
 					$title = get_sub_field('title');
 					$address = get_sub_field('address');
 					$link = get_sub_field('google_link');

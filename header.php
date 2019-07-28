@@ -50,6 +50,11 @@
 					<div class="site-logo">
 						<a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/shc_logo.svg" alt="Surrey Hand Clinic logo"></a>
 					</div>
+<!--				
+					<div class="bookAppointmentBtn">
+						<a href="/appointment/" class="btn readmoreBtn">Request an appointment</a>
+					</div>
+-->					
 			</div>
 		</div>
 	</header><!-- #masthead -->

@@ -96,7 +96,7 @@ h1, h2 {
   color: #000000;
   font-weight: 600;
   letter-spacing: 0.25rem;
-  margin: 1rem 0 1.5rem 0;
+  margin: 1.5rem 0 1rem 0;
 }
 
 h3 {
@@ -132,7 +132,7 @@ h3 {
 }
 
 .grey-panel{
-   background-color: $gray-100;
+   background-color: $gray-200;
    padding-top: 2rem;
    padding-bottom: 2rem;
 }
@@ -188,6 +188,9 @@ h3 {
 }
 .green {
   background-color: $green;
+}
+.blue {
+  background-color: $blue;
 }
 
 #serviceWrapper{
@@ -249,7 +252,7 @@ h3 {
   width: 3rem;
 }
 .location-block{
-  height: 18rem;
+  height: 20rem;
 }
 .googleBtn {
   white-space: normal;
@@ -319,6 +322,14 @@ h3 {
   text-align: center;
 }
 
+.accreditationLogo {
+  width: 100px;
+  margin-right: 2rem;
+}
+.locationLogo {
+  height: 45px;
+}
+
 // FORM STYLING //
 
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
@@ -328,8 +339,8 @@ body .gform_wrapper .gform_body .gform_fields .gfield textarea {
   border: 0px solid black;
 }
 body .gform_wrapper .gform_footer input[type=submit] {
-  padding: 1rem 4rem;
-  background-color: $orange;
+  padding: 0.3rem 4rem;
+  background-color: $pink;
   border: none;
   color: $white;
   margin: 0 auto;
@@ -349,7 +360,7 @@ div.gform_footer.top_label {
 }
 
 @media (max-width: 768px) {
-  .home-img-bl, .home-img-tr {
+  .home-img-bl {
     display: none;
   }
   #serviceWrapper{
@@ -381,5 +392,10 @@ div.gform_footer.top_label {
     width: 90%;
     margin: 0 auto;
   }
+  .accreditationLogo {
+    width: 60px;
+    margin: 1rem 0.5rem;
+  }
+
 
 }

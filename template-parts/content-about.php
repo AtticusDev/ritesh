@@ -26,6 +26,20 @@
 						<div class="about-content">
 							<h1 class="overline"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
+							<h1>Accreditations</h1>
+
+							<?php if( have_rows('accreditations') ): 
+								 while( have_rows('accreditations') ): the_row(); 
+								// vars
+								$logo = get_sub_field('logo');
+								$link = get_sub_field('link');
+							?>
+								<a href="<?php echo $link; ?>">
+								<img src="<?php echo $logo; ?>" class="accreditationLogo">
+								</a>
+
+							<?php endwhile;
+							endif; ?>
 						</div>
 					</div>
 				</div>
