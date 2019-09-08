@@ -7738,10 +7738,14 @@ h3 {
 .grey-panel {
   background-color: #e9ecef;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
 
 .home-img, .home-img-tr {
   padding-bottom: 2rem; }
+
+.home-img {
+  margin-top: 1.4rem; }
 
 .home-img-tr {
   margin-top: 1.5rem; }
@@ -7774,8 +7778,16 @@ h3 {
 .about-content {
   padding: 2rem 1rem 1rem 1rem; }
 
+.patient-content {
+  padding: 0rem 1rem 1rem 1rem; }
+
+.patient-img {
+  margin-top: 1.4rem; }
+
 .treatment-content {
-  padding-right: 4rem; }
+  padding-right: 0rem; }
+  .treatment-content p {
+    padding-right: 4rem; }
 
 .pink {
   background-color: #ff7bac; }
@@ -7797,6 +7809,33 @@ h3 {
   height: 450px;
   overflow: hidden;
   padding: 0px;
+  opacity: 1; }
+
+.serviceBlock1 {
+  transition: all 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.serviceBlock1.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.serviceBlock2 {
+  transition: all 0.5s ease-out 0.25s;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.serviceBlock2.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.serviceBlock3 {
+  transition: all 0.5s ease-out 0.5s;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.serviceBlock3.in-view {
+  transform: translateY(0px);
   opacity: 1; }
 
 .box1, .box2, .box3 {
@@ -7839,11 +7878,61 @@ h3 {
     color: #fff;
     text-decoration: none; }
 
+.testimonialWrapper {
+  padding: 3rem;
+  margin-bottom: 4rem; }
+
+.testimonialWrapper {
+  transition: all 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.testimonialWrapper.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.largeTestimonial {
+  font-size: 1.6rem;
+  Line-height: 1.3;
+  color: #ffffff;
+  padding: 0 8rem; }
+
+.testimonialName {
+  font-size: 16px;
+  color: #ffffff; }
+
 .location-icon {
   width: 3rem; }
 
 .location-block {
   height: 20rem; }
+
+.location-icon {
+  transition: all 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.location-icon.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.location-title {
+  transition: all 0.5s ease-out 0.25s;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.location-title.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.location-address {
+  transition: all 0.5s ease-out 0.5s;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.location-address.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
 
 .googleBtn {
   white-space: normal;
@@ -7909,12 +7998,34 @@ h3 {
   width: 100%;
   text-align: center; }
 
+.condition-img {
+  margin-top: 1.5rem; }
+
 .accreditationLogo {
   width: 100px;
   margin-right: 2rem; }
 
 .locationLogo {
   height: 45px; }
+
+.contact-img {
+  margin-top: 1rem; }
+
+.contact-img-bottom {
+  background-size: cover;
+  background-position: center center;
+  height: 30rem;
+  width: 100%;
+  margin: 2rem 0 3rem 0; }
+
+.contact-img-bottom {
+  transition: all 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0; }
+
+.contact-img-bottom.in-view {
+  transform: translateY(0px);
+  opacity: 1; }
 
 body .gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
   border: 0px solid black; }
@@ -7956,6 +8067,8 @@ div.gform_footer.top_label {
     margin-top: 0rem; }
   .about-img {
     display: none; }
+  .condition-img {
+    display: none; }
   .condition-box {
     height: 4rem;
     padding: 1rem;
@@ -7966,7 +8079,22 @@ div.gform_footer.top_label {
     margin: 0 auto; }
   .accreditationLogo {
     width: 60px;
-    margin: 1rem 0.5rem; } }
+    margin: 1rem 0.5rem; }
+  .testimonialWrapper {
+    padding: 1rem;
+    margin-bottom: 2rem; }
+  .largeTestimonial {
+    font-size: 1.3rem;
+    Line-height: 1.3;
+    color: #ffffff;
+    padding: 0; }
+  .testimonialName {
+    font-size: 16px;
+    color: #ffffff; }
+  .treatment-content {
+    padding-right: 0rem; }
+    .treatment-content p {
+      padding-right: 0rem; } }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -8119,6 +8247,13 @@ div.gform_footer.top_label {
 .site-footer {
   padding: 0 0 8rem 0;
   margin-top: 4rem; }
+
+.site-footer {
+  transition: all 0.5s ease-out;
+  opacity: 0; }
+
+.site-footer.in-view {
+  opacity: 1; }
 
 .site-logo-footer {
   width: 6rem;

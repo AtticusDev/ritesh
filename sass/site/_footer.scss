@@ -4,6 +4,16 @@
 //    background-color: $gray-100;
 }
 
+.site-footer {
+  transition: all 0.5s ease-out;
+//  transform: translateY(30px);
+  opacity: 0;
+}
+.site-footer.in-view {
+//  transform: translateY(0px);
+  opacity: 1;
+}
+
 .site-logo-footer{
 	width: 6rem;
 	margin: 2rem auto;

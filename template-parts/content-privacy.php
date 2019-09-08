@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in patient.php
+ * Template part for displaying page content in privacy.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -13,14 +13,9 @@
 	<div class="container-fluid grey-panel">
 		<div class="row">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="patient-img">
-							<img src="<?php the_post_thumbnail_url(); ?>">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="patient-content">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="about-content">
 							<h1 class="overline"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
 						</div>
@@ -32,10 +27,7 @@
 
 
 
-			<?php
-			get_template_part( 'template-parts/testimonial' );
-			?>
-	
+
 </article><!-- #post-## -->
 
 

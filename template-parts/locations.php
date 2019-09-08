@@ -1,12 +1,12 @@
-	<div class="container">
+	<div class="container locationTrigger">
 		<div class="row justify-content-center">
 			<div class="text-center">
 			<p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/location-icon.svg" class="location-icon"></p>
 
-				<h2 class="overline-center mb-5">Practice Locations</h2>
+				<h2 class="overline-center mb-5 location-title">Practice Locations</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row location-address">
 
 				<?php if( have_rows('location_panels', 'option') ): 
 					 while( have_rows('location_panels', 'option') ): the_row(); 

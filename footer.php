@@ -33,7 +33,7 @@
 	</div>
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer footerTrigger" role="contentinfo">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="footer-contact-details">
@@ -43,8 +43,17 @@
 
 
 					<div class="site-info">
+						<?php if ( is_page('contact')){ ?>
+
+						<p>Private secretary<br />Rachel Smith: 0208 409 1750</p>
+
+						<?php }else{ ?>
+
 						<p>0208 409 1750</p>
-						<p><a href="mailto:enquiries@surreyhandclinic.com" target="_blank">enquiries@surreyhandclinic.com</a></p>
+
+						<?php } ?>
+
+						<p><a href="mailto:enquiries@surreyhandclinic.com" target="_blank" style="text-decoration: none;">enquiries@surreyhandclinic.com</a>&nbsp;&nbsp;| &nbsp; &nbsp;<a href="/privacy-policy" style="text-decoration: none;">Privacy policy</a></p>
 
 						&copy; <?php bloginfo( 'name' );
 								echo ' - ';

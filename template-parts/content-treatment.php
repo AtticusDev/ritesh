@@ -18,10 +18,12 @@
 						<div class="treatment-content">
 							<h1 class="overline"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
+							<a href="/hand-conditions-we-treat/" class="btn readmoreBtn">Back to conditions</a>
+
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="about-img">
+						<div class="condition-img">
 							<img src="<?php the_post_thumbnail_url(); ?>">
 							<a href="/appointment/" class="btn readmoreBtn">Book an appointment</a>
 
@@ -32,6 +34,10 @@
 		</div>
 	</div>
 
+
+			<?php
+			get_template_part( 'template-parts/testimonial' );
+			?>
 
 
 

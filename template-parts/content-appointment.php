@@ -10,14 +10,14 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container-fluid grey-panel mb-5">
+	<div class="container-fluid grey-panel">
 		<div class="row">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="about-content text-center">
 							<h1 class="overline-center"><?php the_title(); ?></h1>
-							<p><a href="#locations" class="btn readmoreBtn">Click here for for hospital booking numbers</a></p>
+							<p><a href="#locations" class="btn readmoreBtn">Click here for hospital booking numbers</a></p>
 						</div>
 					</div>
 				</div>
@@ -37,6 +37,14 @@
 						</div>
 					</div>
 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bottomImageTrigger">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-12 contact-img-bottom" style="background-image: url('<?php the_field('bottom_image'); ?>'); ">
 				</div>
 			</div>
 		</div>

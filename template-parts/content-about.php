@@ -48,6 +48,10 @@
 	</div>
 
 
+			<?php
+			get_template_part( 'template-parts/testimonial' );
+			?>
+
 
 
 </article><!-- #post-## -->

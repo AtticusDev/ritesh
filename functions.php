@@ -157,4 +157,6 @@ require get_template_directory() . '/inc/bootstrap-walker.php';
 require get_template_directory() . '/inc/post-types/CPT.php';
 //Treatment custom post type
 require get_template_directory() . '/inc/post-types/register-treatments.php';
+//Testimonial custom post type
+require get_template_directory() . '/inc/post-types/register-testimonials.php';
 
